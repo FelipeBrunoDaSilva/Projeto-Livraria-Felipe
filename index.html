@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livraria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>📚 Livraria Felipe</h1>
+
+    <!-- Formulário de Livro -->
+    <form id="book-form">
+      <input type="hidden" id="book-id" />
+      <input type="text" id="title" placeholder="Título do Livro" required />
+      <input type="text" id="author" placeholder="Autor" required />
+      <input type="number" id="year" placeholder="Ano" required />
+      <button type="submit">Salvar</button>
+    </form>
+
+    <hr />
+
+    <!-- Lista de Livros -->
+    <h2>Lista de Livros</h2>
+    <table id="book-table">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Ano</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
